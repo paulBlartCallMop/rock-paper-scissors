@@ -12,8 +12,6 @@ function getComputerChoice() {
 }
 
 function playRound(humanChoice,computerChoice) {
-    humanChoice = humanChoice.slice(0,1).toUpperCase() + humanChoice.slice(1).toLowerCase();
-    computerChoice = computerChoice.slice(0,1).toUpperCase() + computerChoice.slice(1).toLowerCase();
     if (humanChoice === computerChoice) {
         console.log("Tie!");
     } else if ((humanChoice === "Rock" && computerChoice === "Scissors")||(humanChoice === "Scissors" && computerChoice === "Paper")||(humanChoice === "Paper" && computerChoice === "Rock")) {
