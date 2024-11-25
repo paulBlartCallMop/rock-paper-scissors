@@ -21,5 +21,7 @@ function playRound(humanChoice,computerChoice) {
         computerScore += 1;
         document.querySelector('#result').textContent = `You lose! ${computerChoice} beats ${humanChoice}.`
     }
+    document.querySelector('#manScore').textContent = humanScore;
+    document.querySelector('#botScore').textContent = computerScore;
 }
 
