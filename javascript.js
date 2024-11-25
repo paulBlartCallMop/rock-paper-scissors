@@ -4,11 +4,11 @@ let computerScore = 0;
 function getComputerChoice() {
     let rand = 3*Math.random();
     if (rand <= 1) {
-        return "rock"
+        return "Rock"
     } else if (rand <= 2){
-        return "paper"
+        return "Paper"
     }
-    return "scissors"
+    return "Scissors"
 }
 
 function playRound(humanChoice,computerChoice) {
