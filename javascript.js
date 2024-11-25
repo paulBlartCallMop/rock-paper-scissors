@@ -12,6 +12,10 @@ function getComputerChoice() {
 }
 
 function playRound(humanChoice,computerChoice) {
+    if (humanChoice === 5 || computerChoice === 5) {
+        humanChoice = 0;
+        computerChoice = 0;
+    }
     if (humanChoice === computerChoice) {
         console.log("Tie!");
     } else if ((humanChoice === "Rock" && computerChoice === "Scissors")||(humanChoice === "Scissors" && computerChoice === "Paper")||(humanChoice === "Paper" && computerChoice === "Rock")) {
