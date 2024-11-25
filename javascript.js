@@ -16,10 +16,10 @@ function playRound(humanChoice,computerChoice) {
         console.log("Tie!");
     } else if ((humanChoice === "Rock" && computerChoice === "Scissors")||(humanChoice === "Scissors" && computerChoice === "Paper")||(humanChoice === "Paper" && computerChoice === "Rock")) {
         humanScore += 1;
-        console.log(`You win! ${humanChoice} beats ${computerChoice}.`);
+        document.querySelector('#result').textContent = `You win! ${humanChoice} beats ${computerChoice}.`;
     } else {
         computerScore += 1;
-        console.log(`You lose! ${computerChoice} beats ${humanChoice}.`)
+        document.querySelector('#result').textContent = `You lose! ${computerChoice} beats ${humanChoice}.`
     }
 }
 
