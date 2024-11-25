@@ -17,7 +17,7 @@ function playRound(humanChoice,computerChoice) {
         computerChoice = 0;
     }
     if (humanChoice === computerChoice) {
-        console.log("Tie!");
+        document.querySelector('#result').textContent = "Tie!";
     } else if ((humanChoice === "Rock" && computerChoice === "Scissors")||(humanChoice === "Scissors" && computerChoice === "Paper")||(humanChoice === "Paper" && computerChoice === "Rock")) {
         humanScore += 1;
         document.querySelector('#result').textContent = (humanScore === 5) ? "The human has won the match!" : `You win! ${humanChoice} beats ${computerChoice}.`
