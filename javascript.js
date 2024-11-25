@@ -12,9 +12,9 @@ function getComputerChoice() {
 }
 
 function playRound(humanChoice,computerChoice) {
-    if (humanChoice === 5 || computerChoice === 5) {
-        humanChoice = 0;
-        computerChoice = 0;
+    if ((humanScore === 5) || (computerScore === 5)) {
+        humanScore = 0;
+        computerScore = 0;
     }
     if (humanChoice === computerChoice) {
         document.querySelector('#result').textContent = "Tie!";
