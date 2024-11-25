@@ -29,3 +29,10 @@ function playRound(humanChoice,computerChoice) {
     document.querySelector('#botScore').textContent = computerScore;
 }
 
+const menu = document.querySelector('#menu');
+
+menu.addEventListener('click', (event) => {
+    let target = event.target;
+
+    playRound(target.id, getComputerChoice());
+});
