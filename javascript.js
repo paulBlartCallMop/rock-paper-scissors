@@ -11,10 +11,6 @@ function getComputerChoice() {
     return "scissors"
 }
 
-function getHumanChoice() {
-    return prompt("Rock, paper, or scissors?")
-}
-
 function playRound(humanChoice,computerChoice) {
     humanChoice = humanChoice.slice(0,1).toUpperCase() + humanChoice.slice(1).toLowerCase();
     computerChoice = computerChoice.slice(0,1).toUpperCase() + computerChoice.slice(1).toLowerCase();
@@ -29,11 +25,3 @@ function playRound(humanChoice,computerChoice) {
     }
 }
 
-function playGame() {
-    for (let index = 0; index < 5; index++) {
-        playRound(getHumanChoice(),getComputerChoice());
-        console.log(`Human: ${humanScore}, Computer: ${computerScore}`);
-    }
-    humanScore = 0;
-    computerScore = 0;
-}
